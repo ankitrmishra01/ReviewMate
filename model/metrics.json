@@ -1,0 +1,36 @@
+{
+  "model_name": "Salesforce/codet5-small (Fine-Tuned)",
+  "task": "Code Review Comment Generation (CodeReviewer msg subtask)",
+  "trained_on": "Python + JavaScript, 18,500 PR review pairs, 4 epochs",
+  "evaluation_dataset": "CodeReviewer Test Split (2,200 pairs)",
+  "generation_quality_metrics": {
+    "bleu_4": 14.82,
+    "rouge_l": 28.45,
+    "rouge_1": 34.12,
+    "rouge_2": 16.90
+  },
+  "language_breakdown": {
+    "python": {
+      "bleu_4": 15.60,
+      "rouge_l": 29.30,
+      "eval_samples": 1150
+    },
+    "javascript": {
+      "bleu_4": 14.04,
+      "rouge_l": 27.60,
+      "eval_samples": 1050
+    }
+  },
+  "hyperparameters": {
+    "learning_rate": 5e-5,
+    "batch_size": 16,
+    "gradient_accumulation_steps": 2,
+    "max_source_length": 512,
+    "max_target_length": 128,
+    "optimizer": "AdamW",
+    "scheduler": "linear_warmup",
+    "mixed_precision": "fp16",
+    "beam_size": 4
+  },
+  "notes": "BLEU-4 and ROUGE-L are standard n-gram overlap metrics for text generation. For free-form review comment generation where multiple valid phrased reviews exist for the same bug, BLEU in the 14-16 range aligns with published CodeReviewer baseline benchmarks."
+}
