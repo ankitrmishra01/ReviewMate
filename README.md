@@ -4,8 +4,7 @@
 
 [![Live Demo](https://img.shields.io/badge/demo-live-6366F1)](#) [![Model](https://img.shields.io/badge/model-CodeT5--small-blue)](#) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](#)
 
-![ReviewMate landing page](<img width="1721" height="885" alt="image" src="https://github.com/user-attachments/assets/5ed2295a-7bff-4bc3-a401-62582668f3c3" />
-)
+<img width="1721" height="885" alt="ReviewMate landing page" src="https://github.com/user-attachments/assets/5ed2295a-7bff-4bc3-a401-62582668f3c3" />
 
 ## What it does
 
@@ -30,15 +29,13 @@ Under the hood, it's not a generic prompt to a chatbot — it's a **CodeT5 model
 
 CodeT5 correctly flags an unhandled Promise rejection and a `useEffect` cleanup/memory-leak risk, each tagged by category and severity and anchored to the exact diff line.
 
-![Review screen with categorized comments](<img width="1917" height="882" alt="image" src="https://github.com/user-attachments/assets/f94e8243-6ea9-4edd-9eca-ebfee676676c" />
-)
+![Review screen with categorized comments](https://github.com/user-attachments/assets/f94e8243-6ea9-4edd-9eca-ebfee676676c)
 
 **Model Ablation Mode — fine-tuned vs. zero-shot baseline**
 
 Same diff, side by side. The fine-tuned model produces a specific, technically grounded comment; the untrained baseline produces generic, non-specific feedback — this is the core evidence that fine-tuning improved output quality.
 
-![Model ablation comparison](<img width="1917" height="915" alt="image" src="https://github.com/user-attachments/assets/7d8c4a3f-16c5-4f26-b031-3aa12ff4a657" />
-)
+![Model ablation comparison](https://github.com/user-attachments/assets/7d8c4a3f-16c5-4f26-b031-3aa12ff4a657)
 
 ## Tech Stack
 
